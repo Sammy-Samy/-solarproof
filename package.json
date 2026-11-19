@@ -12,6 +12,7 @@
     "test:coverage": "pnpm --filter @solarproof/web vitest run --coverage",
     "e2e": "pnpm --filter @solarproof/web exec playwright test",
     "integration:test": "node scripts/local-soroban-integration.mjs",
+    "lighthouse": "lhci autorun",
     "bridge:dev": "pnpm --filter @solarproof/bridge dev",
     "bridge:build": "pnpm --filter @solarproof/bridge build",
     "bridge:start": "pnpm --filter @solarproof/bridge start",
@@ -20,6 +21,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\" --ignore-path .gitignore"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.14.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "conventional-changelog-conventionalcommits": "^8.0.0",
